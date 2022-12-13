@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gloify Taskk Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- for bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <!-- for font-Icon  -->
+    <script src="https://kit.fontawesome.com/81a03866de.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- <header>
+        <div class="d-flex justify-content-around my-2 container-fluid bg-white"
+            style="height: 50px; position: fixed; top: -8px; padding: 5px">
+            <div> 
+                <img src="https://cdn.rollbar.com/wp-content/themes/rollbar/assets/img/logo-color-rollbar.svg" />
+            </div>
+
+            <div class="bar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="d-flex">
+                <div class="dropdown" id="drop">
+                    <button class="btn btn-white text-dark fw-semibold" id="btn1">
+                        Product
+                    </button>
+                    <div class="dropdown-content" id="drop_content">
+                        <div class="d-flex">
+                            <div>
+                                <a href="#" class="fw-semibold">
+                                    <img src="https://cdn.rollbar.com/wp-content/uploads/2021/04/icon-nav-features.png"
+                                        style="width: 20px" />FEATURES
+                                </a>
+
+                                <a href="#">Discover</a>
+                                <a href="#">Prioritize</a>
+                                <a href="#">Resolve</a>
+                                <a href="#">Automate</a>
+                                <a href="#">Improve</a>
+                            </div>
+                            <div>
+                                <a href="#" class="fw-semibold"><img
+                                        src="https://cdn.rollbar.com/wp-content/uploads/2021/04/icon-nav-platforms.png"
+                                        style="width: 20px" />LANGUAGES/FRAMEWORKS</a>
+
+                                <a href="#" class="fw-semibold">
+                                    <img src="https://cdn.rollbar.com/wp-content/uploads/2021/04/icon-nav-integrations.png"
+                                        style="width: 20px" />INTEGRATION</a>
+
+                                <a href="#" class="fw-semibold">
+                                    <img src="https://cdn.rollbar.com/wp-content/uploads/2021/04/icon-nav-securit.png"
+                                        style="width: 20px" />SECURITY</a>
+
+                                <a href="#"> compliance</a>
+                                <a href="#" class="fw-semibold">
+                                    <img src="https://cdn.rollbar.com/wp-content/uploads/2021/04/dev-loop.png"
+                                        style="width: 20px" />PROJECT UPDATE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn btn-white text-dark fw-semibold">Pricing</button>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-white text-dark fw-semibold">Docs</button>
+                    <div class="dropdown-content">
+                        <div class="d-flex">
+                            <div>
+                                <a href="#" class="fw-semibold"><img
+                                        src="https://cdn.rollbar.com/wp-content/uploads/2021/05/nav-icon-developer@2x.png "
+                                        style="width: 20px" />Developer</a>
+                                <a href="#">Documentation</a>
+                                <a href="#">ProTips</a>
+                                <a href="#">Community</a>
+                                <a href="#">System Status</a>
+                            </div>
+                            <div>
+                                <a href="#" class="fw-semibold"><img
+                                        src="https://cdn.rollbar.com/wp-content/uploads/2021/05/nav-icon-library@2x.png"
+                                        style="width: 20px" />Resources</a>
+                                <a href="#">Blog</a>
+                                <a href="#">Guides</a>
+                                <a href="#">Vidoes</a>
+                                <a href="#">Rollbar Academy</a>
+                            </div>
+                            <div>
+                                <a href="#" class="fw-semibold"><img
+                                        src="https://cdn.rollbar.com/wp-content/uploads/2021/05/nav-icon-developer@2x.png"
+                                        style="width: 20px" />Events</a>
+                                <a href="#">Live Demo</a>
+                                <a href="#">Office Hours</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-white text-dark fw-semibold">
+                        Solutions
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="d-flex">
+                            <div>
+                                <a href="#" class="fw-semibold"><img
+                                        src="https://cdn.rollbar.com/wp-content/uploads/2021/05/nav-icon-teams@2x.png"
+                                        style="width: 20px" />TEAMS</a>
+                                <a href="#">Software Development</a>
+                                <a href="#">Engineering Management</a>
+                                <a href="#">QA/Testing</a>
+                                <a href="#">Platform/Ops</a>
+                                <a href="#">Customer Support</a>
+                            </div>
+                            <div>
+                                <a href="#" class="fw-semibold"><img
+                                        src="https://cdn.rollbar.com/wp-content/uploads/2021/05/nav-icon-usecases@2x.png"
+                                        style="width: 20px" />USE CASES</a>
+                                <a href="#">Low-Risk Release</a>
+                                <a href="#">Production Code Quality</a>
+                                <a href="#">DevOps Bridge</a>
+                                <a href="#">Customer Support</a>
+                                <a href="#">Effective Testing & QA</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn btn-white text-dark fw-semibold">
+                        Customer
+                    </button>
+                </div>
+                <button class="btn btn-white text-dark fw-semibold">
+                    Enterprise
+                </button>
+
+                <button class="btn text-dark border-dark rounded-pill fw-semibold border border-2 mx-2" id="login">
+                    Log in
+                </button>
+                <button class="btn btn-primary text-white rounded-pill fw-semibold mx-2" id="try">
+                    Try free
+                </button>
+            </div>
+        </div>
+
+
+        <div class="container-fluid nav-item d-flex p-3 justify-content-around" style="
+ background: linear-gradient(-53.88deg, #6062f4 11.4%, #343f55 100%);
+ height: 450px;
+ margin-top: 65px;
+ ">
+            <div>
+                <div class="p-4">
+                    <a href="#" class="text-white fw-semibold text-decoration-none">BLOG &nbsp;|</a>
+                    <a href="#" class="text-white fw-semibold text-decoration-none"> &nbsp;TUTORIALS
+                    </a>
+                    <h6 class="text-white px-2 java-script">&nbsp; JAVASCRIPT</h6>
+                </div>
+                <div>
+                    <h1 class="text-white fw-bold" style="font-size: xxx-large">
+                        JavaScript <br />RangeError: <br />Maximum Call stack <br />size
+                        Exceeded
+                    </h1>
+                </div>
+                <div>
+                    <p class="text-white fw-semibold">
+                        Aug 15, 2022 &nbsp;  •  &nbsp;By Rollbar Editorial Team
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="https://cdn.rollbar.com/wp-content/uploads/2022/08/how-to-fix-rangeerror-maximum-call-size-exceeded-in-javascript.png"
+                    style="width: 550px; margin-top: 70px; border-radius: 10px" />
+            </div>
+        </div>
+    </header> -->
+
+    <header>
+        <div
+          class="nav d-flex justify-content-around my-2 align-items-center container-fluid bg-white text-center"
+          style="height: 64px; position: fixed; top: -8px; padding: 5px"
+        >
+          <!-- LOGO -->
+          <div class="pt-1">
+            <img
+              src="https://cdn.rollbar.com/wp-content/themes/rollbar/assets/img/logo-color-rollbar.svg"
+            />
+          </div>
+          <!-- ---Buttons--- -->
+          <div class="d-flex">
+            <!-- ---1 Button--- -->
+            <div class="dropdown" id="drop">
+              <button
+                class="btn btn-white text-dark fw-semibold navbtn"
+                id="btn1"
+              >
+                Product
+              </button>
+              <div class="dropdown-content" id="drop_content">
+                <div class="d-flex justify-content-around">
+                  <div>
+                    <a href="#" class="fw-semibold">
+                      <img
+                        src="https://cdn.rollbar.com/wp-content/uploads/2021/04/icon-nav-features.png"
+                        style="width: 20px; margin-left: -22px"
+                      /><span class="border-2 border-bottom"> FEATURES</span>
+                    </a>
+  
+                    <a href="#">Discover</a>
+                    <a href="#">Prioritize</a>
+                    <a href="#">Resolve</a>
+                    <a href="#">Automate</a>
+                    <a href="#">Improve</a>
+                  </div>
+                  <div>
+                    <a href="#" class="fw-semibold"
+                      ><img
+                        src="https://cdn.rollbar.com/wp-content/uploads/2021/04/icon-nav-platforms.png"
+                        style="width: 20px; margin-left: -22px"
+                      />LANGUAGES/FRAMEWORKS</a
+                    >
+  
+                    <a href="#" class="fw-semibold">
+                      <img
+                        src="https://cdn.rollbar.com/wp-content/uploads/2021/04/icon-nav-integrations.png"
+                        style="width: 20px; margin-left: -22px"
+                      />INTEGRATION</a
+                    >
+  
+                    <a href="#" class="fw-semibold">
+                      <img
+                        src="https://cdn.rollbar.com/wp-content/uploads/2021/04/icon-nav-securit.png"
+                        style="width: 20px; margin-left: -22px"
+                      /><span class="border-2 border-bottom"> SECURITY</span></a
+                    >
+  
+                    <a href="#"> compliance</a>
+                    <a href="#" class="fw-semibold">
+                      <img
+                        src="https://cdn.rollbar.com/wp-content/uploads/2021/04/dev-loop.png"
+                        style="width: 20px; margin-left: -22px"
+                      />PROJECT UPDATE</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ---2nd Button--- -->
+            <div>
+              <button class="btn btn-white text-dark fw-semibold navbtn">
+                Pricing
+              </button>
+            </div>
+            <!-- ---3rd Button--- -->
+            <div class="dropdown">
+              <button class="btn btn-white text-dark fw-semibold navbtn">
+                Docs
+              </button>
+              <div class="dropdown-content">
+                <div class="d-flex justify-content-center">
+                  <div>
+                    <a href="#" class="fw-semibold"
+                      ><img
+                        src="https://cdn.rollbar.com/wp-content/uploads/2021/05/nav-icon-developer@2x.png "
+                        style="width: 20px; margin-left: -22px"
+                      /><span class="border-2 border-bottom"> Developer</span></a
+                    >
+                    <a href="#">Documentation</a>
+                    <a href="#">ProTips</a>
+                    <a href="#">Community</a>
+                    <a href="#">System Status</a>
+                  </div>
+                  <div>
+                    <a href="#" class="fw-semibold"
+                      ><img
+                        src="https://cdn.rollbar.com/wp-content/uploads/2021/05/nav-icon-library@2x.png"
+                        style="width: 20px; margin-left: -22px"
+                      /><span class="border-2 border-bottom"> Resources</span></a
+                    >
+                    <a href="#">Blog</a>
+                    <a href="#">Guides</a>
+                    <a href="#">Vidoes</a>
+                    <a href="#">Rollbar Academy</a>
+                  </div>
+                  <div>
+                    <a href="#" class="fw-semibold"
+                      ><img
+                        src="https://cdn.rollbar.com/wp-content/uploads/2021/05/nav-icon-developer@2x.png"
+                        style="width: 20px; margin-left: -22px"
+                      /><span class="border-2 border-bottom">Events</span></a
+                    >
+                    <a href="#">Live Demo</a>
+                    <a href="#">Office Hours</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ---4th Button--- -->
+            <div class="dropdown">
+              <button class="btn btn-white text-dark fw-semibold navbtn">
+                Solutions
+              </button>
+              <div class="dropdown-content">
+                <div class="d-flex justify-content-center">
+                  <div>
+                    <a href="#" class="fw-semibold"
+                      ><img
+                        src="https://cdn.rollbar.com/wp-content/uploads/2021/05/nav-icon-teams@2x.png"
+                        style="width: 20px; margin-left: -22px"
+                      /><span class="border-2 border-bottom"> TEAMS</span></a
+                    >
+                    <a href="#">Software Development</a>
+                    <a href="#">Engineering Management</a>
+                    <a href="#">QA/Testing</a>
+                    <a href="#">Platform/Ops</a>
+                    <a href="#">Customer Support</a>
+                  </div>
+                  <div>
+                    <a href="#" class="fw-semibold"
+                      ><img
+                        src="https://cdn.rollbar.com/wp-content/uploads/2021/05/nav-icon-usecases@2x.png"
+                        style="width: 20px; margin-left: -22px"
+                      /><span class="border-2 border-bottom"> CASES</span></a
+                    >
+                    <a href="#">Low-Risk Release</a>
+                    <a href="#">Production Code Quality</a>
+                    <a href="#">DevOps Bridge</a>
+                    <a href="#">Customer Support</a>
+                    <a href="#">Effective Testing & QA</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ---6th Button--- -->
+            <div>
+              <button class="btn btn-white text-dark fw-semibold navbtn">
+                Customer
+              </button>
+            </div>
+            <!-- ---7th Button--- -->
+            <button class="btn btn-white text-dark fw-semibold navbtn">
+              Enterprise
+            </button>
+  
+            <button id="login">Log in</button>
+            <button
+              class="btn btn-primary text-white rounded-pill fw-semibold mx-2"
+              id="try"
+            >
+              Try free
+            </button>
+          </div>
+        </div>
+
+        <div class="container-fluid nav-item d-flex p-3 justify-content-around" 
+        style="background: linear-gradient(-53.88deg, #6062f4 11.4%, #343f55 100%);
+               height: 450px;
+               margin-top: 65px;
+        ">
+            <div>
+                <div class="p-4">
+                    <a href="#" class="text-white fw-semibold text-decoration-none">BLOG &nbsp;|</a>
+                    <a href="#" class="text-white fw-semibold text-decoration-none"> &nbsp;TUTORIALS
+                    </a>
+                    <h6 class="text-white px-2 java-script">&nbsp; JAVASCRIPT</h6>
+                </div>
+                <div>
+                    <h1 class="text-white fw-bold" style="font-size: xxx-large">
+                        JavaScript <br />RangeError: Maximum <br />Call Stack Size<br />
+                        Exceeded
+                    </h1>
+                </div>
+                <div>
+                    <p class="text-white">
+                        Aug 15, 2022 &nbsp;  •  &nbsp;By Rollbar Editorial Team
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="https://cdn.rollbar.com/wp-content/uploads/2022/08/how-to-fix-rangeerror-maximum-call-size-exceeded-in-javascript.png"
+                    style="width: 550px; margin-top: 70px; border-radius: 10px" />
+            </div>
+        </div>
+      </header>
+
+
+    <section id="main">
+        <div class="container">
+            <div class="row">
+
+                <div class="left col-lg-8">
+                    <article>
+                        <p>The JavaScript <code>RangeError: Maximum call stack size exceeded</code> is an error that
+                            occurs
+                            when there are too many function calls, or if a function is missing a base case.</p>
+                        <p>Error message:</p>
+                        <pre>
+ <code class="bgblack special pos range-error">RangeError: Maximum call stack size exceeded</code>
+ </pre>
+                        <p>Error Type:</p>
+                        <pre>
+ <code class="bgblack error">
+ <span class="green ">RangeError</span>
+ </code>
+ </pre>
+                        <h2>What Causes RangeError: Maximum Call Stack Size Exceeded</h2>
+                        <p>The <code>RangeError: Maximum call stack size exceeded</code> is thrown when a function call
+                            is made that
+                            exceeds the call stack size. This can occur due to the following reasons:</p>
+                        <ul class="func-call">
+                            <li>Too many function calls.</li>
+                            <li>Issues in handling recursion, e.g. missing base case in a recursive function to stop
+                                calling
+                                itself infinitely.</li>
+                            <li>Out of range operations.</li>
+                        </ul>
+                        <h2>RangeError: Maximum Call Stack Size Exceeded Example</h2>
+                        <p>Here’s an example of a JavaScript <code>RangeError: Maximum call stack size exceeded</code>
+                            thrown when using a recursive function that does not have a base case:</p>
+                        <pre>
+<code class="bgblack">
+<span class="func">function myFunc</span>() {
+    <span class="func my-func"> myFunc</span>();
+}
+ 
+<span class="func">myFunc</span>();
+</code>
+ </pre>
+        <p  class="recursive-function">Since the recursive function <code>myFunc()</code> does not have a terminating condition
+            (base
+            case), calling it creates an infinite loop as the function keeps calling itself over and
+            over
+            again until the <code>RangeError: Maximum call stack size exceeded</code> error occurs:</p>
+        <pre>
+ <code class="bgblack special call-stack">
+Uncaught RangeError: Maximum call stack size exceeded
+    at myFunc (test.js:2:2)
+    at myFunc (test.js:2:2)
+    at myFunc (test.js:2:2)
+    at myFunc (test.js:2:2)
+    at myFunc (test.js:2:2)
+    at myFunc (test.js:2:2)
+    at myFunc (test.js:2:2)
+    at myFunc (test.js:2:2)
+    at myFunc (test.js:2:2)
+    at myFunc (test.js:2:2)
+ </code>
+ </pre>
+                        <p></p>
+                        <pre></pre>
+                        <h2>How to Avoid RangeError: Maximum Call Stack Size Exceeded</h2>
+                        <p>If this error is encountered when calling recursive functions, it should be ensured that the
+                            function has a defined base case to terminate the recursive calls.</p>
+                        <p>In case this error occurs due to an excessive number of function calls or variables, these
+                            should
+                            be reduced as much as possible. Any out of range operations should also be checked and
+                            avoided.
+                            These issues can be inspected using the browser console and developer tools.</p>
+                        <p>The earlier example can be updated to include a base case:</p>
+                        <pre>
+<code class="bgblack">
+<span class="func"> function myFunc</span>(i) {
+      <span class="func function">if</span> (i >= 5) {
+          <span class="func">return</span>;
+      }
+      <span class="func function">myFunc</span>(i+1);
+  }
+ 
+  <span class="func">myFunc</span>(1);<br>
+</code>
+ </pre>
+                        <p class="above-code">The above code avoids the error since recursive calls terminate when the base case is met.
+                        </p>
+                        <h2>Track, Analyze and Manage Errors With Rollbar</h2>
+                        <p>Managing errors and exceptions in your code is challenging. It can make deploying production
+                            code
+                            an unnerving experience. Being able to track, analyze, and manage errors in real-time can
+                            help
+                            you to proceed with more confidence. Rollbar automates error monitoring and triaging, making
+                            fixing JavaScript errors easier than ever. <a id="blue" href="#">Sign Up Today!</a> </p>
+                    </article>
+
+                    <a href="#">
+                        <button class="btn-1">JavaScript</button>
+                    </a>
+                </div>
+
+
+
+                <div class="right col-lg-4">
+                    <div class="pos">
+                        <h3>Table of Contents</h3>
+                        <div class="right-content">
+                            <ul>
+                                <li><a href="#">What Causes RangeError: Maximum <br>Call Stack Size Exceeded</a></li>
+                                <li><a href="#">RangeError: Maximum Call Stack Size<br> Exceeded Example</a></li>
+                                <li><a href="#">How to Avoid RangeError: Maximum<br> Call Stack Size Exceeded
+                                    </a></li>
+                                <li><a href="#">Track, Analyze and Manage Errors With<br> Rollbar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <br><br>
+
+
+    <section id="aside">
+        <div class="wrapper container">
+            <div class="related-post">
+                <div>
+                    <h1>Related Posts</h1>
+                </div>
+                <div>
+                    <button class="btn-2">See all posts</button>
+                </div>
+            </div>
+            <div class="card-list">
+                <div class="img-1">
+                    <img
+                        src="https://cdn.rollbar.com/wp-content/uploads/2022/09/how-to-fix-typeerror-cannot-read-property-length-of-undefined-in-javascript.png">
+                    <h5>How to Fix TypeError: Cannot Read Property Length of Undefined in <br>JavaScript</h5>
+                    <p>Read More &nbsp;<i class="fa-solid fa-arrow-right-long"></i></p>
+                </div>
+                <div class="img-1">
+                    <img
+                        src="https://cdn.rollbar.com/wp-content/uploads/2022/09/how-to-fix-typeerror-null-is-not-an-object-in-javascript.png">
+                    <h5> How to Fix TypeError: Null is Not an Object in JavaScript</h5>
+                    <p>Read More &nbsp;<i class="fa-solid fa-arrow-right-long"></i></p>
+                </div>
+                <div class="img-1">
+                    <img
+                        src="https://cdn.rollbar.com/wp-content/uploads/2022/08/how-to-fix-referenceerror-event-is-not-defined-in-javascript.png">
+                    <h5>How to Fix ReferenceError: Event is Not Defined in JavaScript</h5>
+                    <p>Read More &nbsp;<i class="fa-solid fa-arrow-right-long"></i></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="foot">
+        <div class="d-flex bg-primary" style="padding: 0px; height: 450px">
+            <div class="">
+              <img
+                src="https://cdn.rollbar.com/wp-content/themes/rollbar/assets/img/shapes/quarter-circle-get-started.svg"
+                style="
+                  width: 572px;
+                  z-index: -1;
+                  margin-top: -50px;
+                  margin-bottom: -360px;
+                "
+              />
+              <p
+                class="z-index-3 pt-3 text-white fw-semibold fs-5"
+                style="margin: 50px 110px"
+              >
+                "Rollbar allows us to go <br />
+                from alerting to impact <br />
+                analysis and resolution <br />
+                in a matter of minutes. <br />
+                Without it we would be <br />
+                flying blind"
+              </p>
+            </div>
+            <div>
+              <img
+                src="https://cdn.rollbar.com/wp-content/uploads/2021/04/footer-promo-img@2x.png"
+                style="width: 365px; margin-left: -220px"
+              />
+            </div>
+            <div>
+              <h1
+                class="text-white fw-bold"
+                style="padding-left: 25px; padding-top: 90px; font-size: xxx-large"
+              >
+                Start continuously <br />
+                improving your code<br> today.
+              </h1>
+              <div class="expert-button">
+                <button
+                  class="btn bg-primary text-white rounded-pill fw-semibold mx-2 btn-outline-light border border-3"
+                  style="width: 170px"
+                >
+                  Try free
+                </button>
+                <h4 class="text-white">
+                  Speak with an expert &nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right-long"></i>
+                </h4>
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+
+    <!-- Footer Section  -->
+
+    <section id="footer">
+        <footer>
+
+            <div class="context">
+
+                <div class="top">
+                    <div class="span">
+                        <span>Get the latest updates, tutorials and more, delivered to your inbox.</span>
+                    </div>
+                    <form action="">
+                        <div class="input">
+                            <input type="text" placeholder="your@email.com">
+                        </div>
+                        <div class="btn">
+                            <input type="submit" value="Subscribe">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="middle">
+                    <div class="nav2 w100">
+                        <a href="">
+                            <img src="https://cdn.rollbar.com/wp-content/themes/rollbar/assets/img/logo-white-rollbar.svg"
+                                alt="">
+                        </a>
+                    </div>
+
+                    <div class="nav2">
+                        <span>PRODUCT</span>
+                        <ul>
+                            <li><a href="">Product</a></li>
+                         <li><a href="">Pricing</a></li>
+                         <li><a href="">Customers</a></li>
+                         <li><a href="">Platforms</a></li>
+                         <li><a href="">Integrations</a></li>
+                         <li><a href="">Changelog</a></li>
+                     </ul>
+                 </div>
+                 <div class="nav2">
+                     <span>LANGUAGES/FRAMEWORKS</span>
+                     <ul id="link_div">
+                         <li><a href="">JavaScript</a></li>
+                         <li><a href="">PHP</a></li>
+                         <li><a href="">Ruby</a></li>
+                         <li><a href="">Python</a></li>
+                         <li><a href="">iOS</a></li>
+                         <li><a href="">Java</a></li>
+                         <li><a href="">.NET</a></li>
+                         <li><a href="">Angular</a></li>
+                         <li><a href="">React</a></li>
+                         <li><a href="">Laravel</a></li>
+                         <li><a href="">Node</a></li>
+                         <li><a href="">Rails</a></li>
+                         <li><a href="">Django</a></li>
+                         <li><a href="">More…</a></li>
+                     </ul>
+                 </div>
+                 <div class="nav2">
+                     <span>DOCUMENTATION</span>
+                     <ul>
+                         <li><a href="">Docs Overview</a></li>
+                         <li><a href="">Setting up Rollbar</a></li>
+                         <li><a href="">Notifications</a></li>
+                         <li><a href="">Deploy Tracking</a></li>
+                         <li><a href="">Telemetry</a></li>
+                         <li><a href="">Security & Compliance</a></li>
+                         <li><a href="">API</a></li>
+                     </ul>
+                 </div>
+                 <div class="nav2">
+                     <span>COMPANY</span>
+                     <ul>
+                         <li><a href="">About Us</a></li>
+                         <li><a href="">Careers</a></li>
+                         <li><a href="">Contact Us</a></li>                   
+                     </ul>
+                     <div class="icon">
+                         <a href="" class="icon"><i class="fa-brands fa-github"></i></a>
+                         <a href="" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                         <a href="" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+                     </div>
+                 </div>
+             </div>
+     
+             <div class="line"></div>
+             
+             
+             <div class="bottom">
+                 <div>&copy; 2012-22 Rollbar Inc.</div>
+                 <ul>
+                     <li>Privacy Policy</li>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     <li>Terms of Service</li>
+                 </ul>
+             </div>
+            </div>
+             
+         </footer>
+    </section>
+</body>
+</html>
